@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="openstreetmap">
+&lt;!DOCTYPE html&gt;
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>World Map</title>
+        <link rel="stylesheet" type="text/css" href="/website_google_map/static/src/css/leaflet.css" />
+    </head>
+    <body t-att-data-partner-url="partner_url or ''">
+        <script>
+            var odoo_partner_data = <t t-raw="partner_data"/>;
+        </script>
+        <div id="openstreetmap_div"></div>
+        <script type="text/javascript" src="/website_google_map/static/src/js/leaflet.js"></script>
+    </body>
+</html>
+</template>
+</data>
+</openerp>
